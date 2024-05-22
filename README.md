@@ -1,6 +1,7 @@
 # 생물정보학교육
 
-![교육 로고](https://www.example.com/logo.png)
+![image](https://github.com/kangjunho/Kang_Edu/assets/31853781/802fea2e-7dab-4ca9-9d13-9d5114f8971d)
+
 
 ## 소개
 이 저장소는 **생물정보학**을 배우기 위한 교육 자료를 제공합니다. 각 섹션은 생물정보학의 중요한 주제들을 다루고 있으며, 실습 예제와 함께 제공합니다.

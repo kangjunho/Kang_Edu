@@ -1,3 +1,98 @@
+**R 프로그래밍**
+
 R 프로그램 기본 용어 설명집
 1. 변수 (Variable)
 변수는 데이터를 저장하는 장소입니다. R에서 변수는 <- 연산자를 사용하여 값을 할당합니다.
+
+R
+코드 복사
+x <- 10
+2. 데이터 타입 (Data Types)
+R에서 사용되는 주요 데이터 타입에는 숫자형(numeric), 문자형(character), 논리형(logical) 등이 있습니다.
+
+R
+코드 복사
+x <- 10        # 숫자형
+y <- "Hello"   # 문자형
+z <- TRUE      # 논리형
+3. 벡터 (Vector)
+벡터는 동일한 데이터 타입의 값들을 일렬로 저장하는 1차원 배열입니다. c() 함수를 사용하여 벡터를 생성합니다.
+
+R
+코드 복사
+v <- c(1, 2, 3, 4, 5)
+4. 리스트 (List)
+리스트는 서로 다른 데이터 타입의 값들을 저장할 수 있는 1차원 배열입니다.
+
+R
+코드 복사
+lst <- list(1, "two", TRUE)
+5. 데이터 프레임 (Data Frame)
+데이터 프레임은 테이블 형식의 데이터를 저장하는 2차원 배열로, 각 열은 벡터로 구성됩니다. data.frame() 함수를 사용하여 데이터 프레임을 생성합니다.
+
+R
+코드 복사
+df <- data.frame(
+  name = c("John", "Jane", "Doe"),
+  age = c(23, 35, 28),
+  gender = c("M", "F", "M")
+)
+6. 행렬 (Matrix)
+행렬은 동일한 데이터 타입의 값을 저장하는 2차원 배열입니다. matrix() 함수를 사용하여 행렬을 생성합니다.
+
+R
+코드 복사
+m <- matrix(1:6, nrow = 2, ncol = 3)
+7. 함수 (Function)
+함수는 특정 작업을 수행하는 코드 블록입니다. function() 키워드를 사용하여 함수를 정의합니다.
+
+R
+코드 복사
+add <- function(a, b) {
+  return(a + b)
+}
+result <- add(2, 3)
+8. 패키지 (Package)
+패키지는 특정 목적을 위해 미리 작성된 함수 및 데이터의 모음입니다. install.packages() 함수를 사용하여 패키지를 설치하고, library() 함수를 사용하여 패키지를 로드합니다.
+
+R
+코드 복사
+install.packages("ggplot2")
+library(ggplot2)
+9. 조건문 (Conditional Statement)
+조건문은 특정 조건에 따라 다른 코드를 실행하는 데 사용됩니다. if, else if, else를 사용하여 조건문을 작성합니다.
+
+R
+코드 복사
+x <- 5
+if (x > 0) {
+  print("Positive")
+} else if (x < 0) {
+  print("Negative")
+} else {
+  print("Zero")
+}
+10. 반복문 (Loop)
+반복문은 특정 코드를 여러 번 반복해서 실행하는 데 사용됩니다. for, while 반복문이 있습니다.
+
+R
+코드 복사
+# for 반복문
+for (i in 1:5) {
+  print(i)
+}
+
+# while 반복문
+i <- 1
+while (i <= 5) {
+  print(i)
+  i <- i + 1
+}
+11. 플롯 (Plot)
+플롯은 데이터를 시각화하는 데 사용됩니다. plot() 함수를 사용하여 기본적인 플롯을 그릴 수 있습니다.
+
+R
+코드 복사
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 3, 5, 7, 11)
+plot(x, y)
